@@ -41,12 +41,12 @@ function flyEmoji() {
 
 function popupMessage() {
     const msgs = [
-        "Oops! You triggered a confetti explosion!",
-        "Are you sure you want to press this? The universe might implode.",
-        "Quick! Catch the rainbow before it disappears!",
-        "You pressed the secret ultra-button… now you are immortal!",
-        "Error 666: Too much fun detected!",
-        "Beware: Excessive clicking may cause uncontrollable laughter"
+        "Oops! Confetti explosion!",
+        "You triggered the chaos button!",
+        "Quick! Catch the rainbow!",
+        "Secret ultra-button pressed… you’re immortal!",
+        "Error 666: Too much fun!",
+        "Warning: uncontrollable laughter ahead!"
     ];
     message.innerText = msgs[Math.floor(Math.random() * msgs.length)];
     setTimeout(() => message.innerText = '', 3000);
@@ -87,7 +87,7 @@ setInterval(() => {
     document.body.style.backgroundColor = randomColor();
 }, 2000);
 
-// Random flying meme images
+// Flying meme images
 setInterval(() => {
     const img = document.createElement('img');
     img.src = 'https://i.imgflip.com/30b1gx.jpg';
@@ -99,3 +99,4 @@ setInterval(() => {
     document.body.appendChild(img);
     setTimeout(() => img.remove(), 5000);
 }, 3000);
+
